@@ -1771,6 +1771,55 @@ export default function Home() {
           }
         }
 
+
+        /* ===== MOBİL İLAN KARTI DÜZELTMESİ ===== */
+        .listingLink {
+          display: flex !important;
+          flex-direction: column !important;
+          align-items: stretch !important;
+          width: 100% !important;
+          height: 100% !important;
+          margin-top: 0 !important;
+          padding-bottom: 0 !important;
+          border-bottom: 0 !important;
+          letter-spacing: normal !important;
+          font-size: inherit !important;
+        }
+
+        .listingButton {
+          display: inline-flex !important;
+          width: fit-content !important;
+        }
+
+        @media (max-width: 700px) {
+          .listingCard {
+            width: 100% !important;
+          }
+
+          .listingImage {
+            width: 100% !important;
+            height: 240px !important;
+          }
+
+          .listingInfo {
+            width: 100% !important;
+            padding: 22px !important;
+          }
+
+          .listingInfo h3 {
+            font-size: 22px !important;
+            line-height: 1.3 !important;
+          }
+
+          .listingMeta {
+            width: 100% !important;
+          }
+
+          .listingMeta strong {
+            font-size: 1.05rem !important;
+          }
+        }
+
       `}
 
 
