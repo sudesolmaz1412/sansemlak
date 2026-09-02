@@ -34,10 +34,10 @@ const listings = [
     type: "SATILIK",
     title: "Şans'lı Olan Kazanır! Dekorlu, Temiz, Yüksek Giriş 2+1 Satılık",
     location: "İstanbul",
-    price: "Sahibinden'de Gör",
+    price: "1.999.000 TL",
     details: "2+1",
     image: "/ilanlar/ilan-4.png",
-    link: "https://www.sahibinden.com/ilan/emlak-konut-satilik-sans-li-olan-kazanir-dekorlu-temiz-yuksek-giris-2-plus1-satilik-1336174858/detay",
+    link: "https://www.sahibinden.com/ilan/emlak-konut-satilik-ucevler-de-masrafsiz-krediye-uygun-kat-mulkiyetli-kelepir-arakat-1333168065/detay",
   },
   {
     type: "SATILIK",
