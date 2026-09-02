@@ -7,38 +7,18 @@ const listings = [
     type: "SATILIK",
     title: "Şans Gayrimenkul'den Şahane Satılık 2+1 Masrafsız Arakat Daire",
     location: "İstanbul",
-    price: "Sahibinden'de Gör",
+    price: "2.620.000 TL",
     details: "2+1",
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
-    link: "https://www.sahibinden.com/ilan/emlak-konut-satilik-sans-gayrimenkul-den-sahane-satilik-2-plus1-masrafsiz-arakat-daire-1337233466/detay",
-  },
+    image: "/ilanlar/ilan-9.png",
+    link: "https://www.sahibinden.com/ilan/emlak-konut-satilik-sans-gayrimenkul-den-sahane-satilik-2-plus1-masrafsiz-arakat-daire-1337233466/detay",  },
   {
     type: "SATILIK",
-    title: "Talatpaşa'da Sıfır %80 Krediye Uygun Lüks 2+1 Arakat Daire",
-    location: "Talatpaşa, İstanbul",
-    price: "Sahibinden'de Gör",
+    title: "Mehterçeşme'de 2+1 Yüksek Giriş Fuzulev & Eminevim'e Uygun",
+    location: "Mehterçeşme, İstanbul",
+    price: "2.450.000 TL",
     details: "2+1",
-    image: "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1200&q=80",
-    link: "https://www.sahibinden.com/ilan/emlak-konut-satilik-talatpasa-da-sifir-80-krediye-uygun-lux-2-plus1-arakat-daire-1334295201/detay",
-  },
-  {
-    type: "SATILIK",
-    title: "Büyükçekmece Pınartepe Bella Park Evleri'nde Büyük Tip 2+1 Satılık",
-    location: "Büyükçekmece, İstanbul",
-    price: "Sahibinden'de Gör",
-    details: "2+1",
-    image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80",
-    link: "https://www.sahibinden.com/ilan/emlak-konut-satilik-buyukcemece-pinartepe-bella-park-evlerinde-buyuk-tip-2-plus1-satilik-1336390039/detay",
-  },
-  {
-    type: "SATILIK",
-    title: "Şans'lı Olan Kazanır! Dekorlu, Temiz, Yüksek Giriş 2+1 Satılık",
-    location: "İstanbul",
-    price: "1.999.000 TL",
-    details: "2+1",
-    image: "/ilanlar/ilan-4.png",
-    link: "https://www.sahibinden.com/ilan/emlak-konut-satilik-ucevler-de-masrafsiz-krediye-uygun-kat-mulkiyetli-kelepir-arakat-1333168065/detay",
-  },
+    image: "/ilanlar/ilan-8.png",
+    link: "https://www.sahibinden.com/ilan/emlak-konut-satilik-mehtercesme-de-2-plus1-yuksek-giris-fuzulev-eminevime-uygun-1334315392/detay",  },
   {
     type: "SATILIK",
     title: "Merkezi Konumda Kelepir! Eminevim & Fuzulev'e Uygun 2+1 Yüksek Giriş",
@@ -60,7 +40,6 @@ const listings = [
 ];
 
 export default function Home() {
-  const [activeTab, setActiveTab] = useState("Satılık");
   const statsRef = useRef<HTMLDivElement | null>(null);
   const [statsStarted, setStatsStarted] = useState(false);
   const [stats, setStats] = useState([0, 0, 0]);
@@ -149,32 +128,19 @@ export default function Home() {
             danışmanlık ve güvenilir hizmet.
           </p>
 
-          <div className="searchBox">
-            <div className="searchTabs">
-              {["Satılık", "Kiralık"].map((tab) => (
-                <button
-                  key={tab}
-                  className={activeTab === tab ? "active" : ""}
-                  onClick={() => setActiveTab(tab)}
-                >
-                  {tab}
-                </button>
-              ))}
-            </div>
+          <div className="heroActions">
+            <a href="#ilanlar" className="heroPrimary">
+              GÜNCEL İLANLARI İNCELE →
+            </a>
 
-            <div className="searchFields">
-              <div>
-                <label>GAYRİMENKUL TÜRÜ</label>
-                <strong>Konut</strong>
-              </div>
-
-              <div>
-                <label>LOKASYON</label>
-                <strong>İstanbul</strong>
-              </div>
-
-              <button>İLANLARI GÖR →</button>
-            </div>
+            <a
+              href="https://wa.me/905324364573"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="heroSecondary"
+            >
+              BİZE ULAŞIN
+            </a>
           </div>
         </div>
 
@@ -272,36 +238,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="servicesSection" id="hizmetler">
-        <span className="sectionTag">03 / HİZMETLERİMİZ</span>
-
-        <h2>
-          Sadece bir ev değil,
-          <br />
-          <em>doğru yatırımı buluyoruz.</em>
-        </h2>
-
-        <div className="servicesGrid">
-          <div className="service">
-            <span>01</span>
-            <h3>Gayrimenkul Satışı</h3>
-            <p>Gayrimenkulünüzün doğru değerle ve doğru alıcıyla buluşmasını sağlıyoruz.</p>
-          </div>
-
-          <div className="service">
-            <span>02</span>
-            <h3>Kiralama Danışmanlığı</h3>
-            <p>Kiracı ve mülk sahibi için güvenli ve profesyonel süreç yönetimi sunuyoruz.</p>
-          </div>
-
-          <div className="service">
-            <span>03</span>
-            <h3>Yatırım Danışmanlığı</h3>
-            <p>Gayrimenkul yatırımlarınız için bölgesel analiz ve profesyonel danışmanlık.</p>
-          </div>
-        </div>
-      </section>
-
       <section className="contactSection" id="iletisim">
         <span className="sectionTag">04 / İLETİŞİM</span>
 
@@ -322,49 +258,6 @@ export default function Home() {
         </div>
       </section>
 
-
-      <section className="services" id="hizmetler">
-        <div className="container">
-          <div className="sectionLabel">HİZMETLERİMİZ</div>
-
-          <h2>
-            Gayrimenkulde <em>profesyonel</em><br />
-            çözümler.
-          </h2>
-
-          <div className="servicesGrid">
-            <article className="serviceCard">
-              <div className="serviceNumber">01</div>
-              <div className="serviceIcon">⌂</div>
-              <h3>Satılık Gayrimenkuller</h3>
-              <p>
-                İhtiyaçlarınıza ve yatırım hedeflerinize uygun gayrimenkulleri
-                doğru seçeneklerle sunuyoruz.
-              </p>
-            </article>
-
-            <article className="serviceCard">
-              <div className="serviceNumber">02</div>
-              <div className="serviceIcon">⌑</div>
-              <h3>Kiralık Gayrimenkuller</h3>
-              <p>
-                Ev, iş yeri ve ticari gayrimenkul seçeneklerinde güvenilir
-                danışmanlık sağlıyoruz.
-              </p>
-            </article>
-
-            <article className="serviceCard">
-              <div className="serviceNumber">03</div>
-              <div className="serviceIcon">↗</div>
-              <h3>Yatırım Danışmanlığı</h3>
-              <p>
-                Bölge analizi ve doğru fiyatlandırma ile yatırım kararlarınıza
-                profesyonel destek oluyoruz.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
 
       <section className="whyUs">
         <div className="container whyGrid">
@@ -630,6 +523,63 @@ export default function Home() {
           cursor: pointer;
         }
 
+
+        /* ===== HERO YENİ BUTONLAR ===== */
+        .heroActions {
+          display: flex;
+          align-items: center;
+          gap: 16px;
+          margin-top: 38px;
+        }
+
+        .heroActions a {
+          text-decoration: none;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          min-height: 58px;
+          padding: 0 30px;
+          font-size: 13px;
+          font-weight: 800;
+          letter-spacing: 1.5px;
+          transition: all 0.3s ease;
+        }
+
+        .heroPrimary {
+          background: #c8a968;
+          color: #111;
+        }
+
+        .heroPrimary:hover {
+          transform: translateY(-3px);
+          filter: brightness(1.08);
+        }
+
+        .heroSecondary {
+          border: 1px solid rgba(255,255,255,0.55);
+          color: #fff;
+          background: rgba(255,255,255,0.08);
+          backdrop-filter: blur(8px);
+        }
+
+        .heroSecondary:hover {
+          background: #fff;
+          color: #111;
+          transform: translateY(-3px);
+        }
+
+        @media (max-width: 700px) {
+          .heroActions {
+            flex-direction: column;
+            align-items: stretch;
+            width: 100%;
+          }
+
+          .heroActions a {
+            width: 100%;
+          }
+        }
+
         .heroBottom {
           position: absolute;
           bottom: 30px;
@@ -670,8 +620,30 @@ export default function Home() {
 
         .listingGrid {
           display: grid;
-          grid-template-columns: repeat(3, 1fr);
+          grid-template-columns: repeat(3, minmax(0, 1fr));
           gap: 25px;
+          width: 100%;
+        }
+
+        @media (max-width: 1100px) {
+          .listingGrid {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+          }
+        }
+
+        @media (max-width: 700px) {
+          .listingGrid {
+            grid-template-columns: 1fr;
+            gap: 18px;
+          }
+
+          .listingImage {
+            height: 260px;
+          }
+
+          .listingInfo {
+            padding: 22px !important;
+          }
         }
 
         .listingLink {
@@ -848,32 +820,85 @@ export default function Home() {
         }
 
         .contactSection {
-          background: #c7a35a;
+          background: #171717;
+          color: #f5f3ee;
           padding: 140px 10%;
         }
 
         .contactSection .sectionTag {
-          color: #151515;
+          color: #c7a35a;
+        }
+
+        .contactSection h2 {
+          color: #f5f3ee;
+        }
+
+        .contactSection h2 em {
+          color: #c7a35a;
         }
 
         .contactSection p {
-          max-width: 600px;
-          font-size: 18px;
+          max-width: 650px;
+          font-size: 20px;
           line-height: 1.7;
-          margin: 30px 0;
+          margin: 35px 0 45px;
+          color: rgba(255,255,255,.65);
         }
 
         .contactButtons {
           display: flex;
           gap: 15px;
+          flex-wrap: wrap;
         }
 
         .contactButtons a {
-          background: #151515;
-          color: white;
-          padding: 17px 25px;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          min-height: 62px;
+          background: #c7a35a;
+          color: #151515;
+          padding: 0 32px;
           font-size: 11px;
-          letter-spacing: .1em;
+          font-weight: 700;
+          letter-spacing: .14em;
+          text-decoration: none;
+          transition: all .3s ease;
+        }
+
+        .contactButtons a:hover {
+          transform: translateY(-4px);
+          background: #f5f3ee;
+        }
+
+        .contactButtons a + a {
+          background: transparent;
+          color: #f5f3ee;
+          border: 1px solid rgba(255,255,255,.35);
+        }
+
+        .contactButtons a + a:hover {
+          background: #f5f3ee;
+          color: #151515;
+          border-color: #f5f3ee;
+        }
+
+        @media (max-width: 650px) {
+          .contactSection {
+            padding: 90px 25px;
+          }
+
+          .contactSection p {
+            font-size: 17px;
+          }
+
+          .contactButtons {
+            flex-direction: column;
+          }
+
+          .contactButtons a {
+            width: 100%;
+          }
         }
 
 
@@ -1058,6 +1083,40 @@ export default function Home() {
         }
 
 
+
+        /* YATAY TAŞMA DÜZELTME */
+        html,
+        body {
+          max-width: 100%;
+          overflow-x: hidden;
+        }
+
+        .container {
+          width: 100%;
+          max-width: 1400px;
+          margin-left: auto;
+          margin-right: auto;
+          padding-left: 25px;
+          padding-right: 25px;
+          box-sizing: border-box;
+        }
+
+        .whyGrid {
+          grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+          width: 100%;
+        }
+
+        .whyContent,
+        .whyList {
+          min-width: 0;
+        }
+
+        @media (max-width: 850px) {
+          .whyGrid {
+            grid-template-columns: 1fr;
+          }
+        }
+
         /* PREMIUM İLAN KARTLARI */
         .listingCard {
           background: #fff;
@@ -1185,7 +1244,64 @@ export default function Home() {
             grid-template-columns: 1fr;
           }
 
-          .heroBottom {
+  
+        /* ===== HERO YENİ BUTONLAR ===== */
+        .heroActions {
+          display: flex;
+          align-items: center;
+          gap: 16px;
+          margin-top: 38px;
+        }
+
+        .heroActions a {
+          text-decoration: none;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          min-height: 58px;
+          padding: 0 30px;
+          font-size: 13px;
+          font-weight: 800;
+          letter-spacing: 1.5px;
+          transition: all 0.3s ease;
+        }
+
+        .heroPrimary {
+          background: #c8a968;
+          color: #111;
+        }
+
+        .heroPrimary:hover {
+          transform: translateY(-3px);
+          filter: brightness(1.08);
+        }
+
+        .heroSecondary {
+          border: 1px solid rgba(255,255,255,0.55);
+          color: #fff;
+          background: rgba(255,255,255,0.08);
+          backdrop-filter: blur(8px);
+        }
+
+        .heroSecondary:hover {
+          background: #fff;
+          color: #111;
+          transform: translateY(-3px);
+        }
+
+        @media (max-width: 700px) {
+          .heroActions {
+            flex-direction: column;
+            align-items: stretch;
+            width: 100%;
+          }
+
+          .heroActions a {
+            width: 100%;
+          }
+        }
+
+        .heroBottom {
             display: none;
           }
 
@@ -1473,7 +1589,192 @@ export default function Home() {
             text-align: center;
           }
         }
-      `}</style>
+
+        /* ===== WHY US PREMIUM ===== */
+
+        .whyUs {
+          position: relative;
+          overflow: hidden;
+          padding: 140px 0 !important;
+          background:
+            radial-gradient(circle at 85% 20%, rgba(199,163,90,.12), transparent 28%),
+            #171717 !important;
+        }
+
+        .whyGrid {
+          display: grid !important;
+          grid-template-columns: 0.9fr 1.1fr !important;
+          gap: 90px !important;
+          align-items: center !important;
+        }
+
+        .whyContent .sectionLabel {
+          color: #c7a35a !important;
+          opacity: 1 !important;
+        }
+
+        .whyContent h2 {
+          max-width: 700px;
+        }
+
+        .whyContent h2 em {
+          color: #c7a35a !important;
+        }
+
+        .whyContent > p {
+          max-width: 620px !important;
+          font-size: 18px !important;
+          line-height: 1.8 !important;
+          color: rgba(255,255,255,.65) !important;
+        }
+
+        .whyButton {
+          display: inline-flex !important;
+          align-items: center;
+          justify-content: center;
+          padding: 19px 32px !important;
+          background: #c7a35a !important;
+          color: #171717 !important;
+          border: 1px solid #c7a35a;
+          transition: all .3s ease !important;
+        }
+
+        .whyButton:hover {
+          transform: translateY(-5px) !important;
+          background: #fff !important;
+          border-color: #fff !important;
+        }
+
+        .whyList {
+          display: flex !important;
+          flex-direction: column;
+          gap: 16px !important;
+        }
+
+        .whyItem {
+          display: grid !important;
+          grid-template-columns: 55px 1fr !important;
+          gap: 25px !important;
+          align-items: start !important;
+          padding: 32px 35px !important;
+          border: 1px solid rgba(255,255,255,.10) !important;
+          background: rgba(255,255,255,.035) !important;
+          transition: all .3s ease !important;
+        }
+
+        .whyItem:hover {
+          transform: translateX(-8px) !important;
+          background: rgba(199,163,90,.08) !important;
+          border-color: rgba(199,163,90,.55) !important;
+          box-shadow: 0 20px 50px rgba(0,0,0,.22) !important;
+        }
+
+        .whyItem > span {
+          color: #c7a35a !important;
+          font-size: 12px !important;
+          font-weight: 700 !important;
+          letter-spacing: .16em !important;
+        }
+
+        .whyItem h3 {
+          margin: 0 0 10px !important;
+          color: #fff !important;
+          font-size: 26px !important;
+        }
+
+        .whyItem p {
+          margin: 0 !important;
+          color: rgba(255,255,255,.58) !important;
+          line-height: 1.7 !important;
+        }
+
+        @media (max-width: 850px) {
+          .whyUs {
+            padding: 90px 20px !important;
+          }
+
+          .whyGrid {
+            grid-template-columns: 1fr !important;
+            gap: 60px !important;
+          }
+        }
+
+        @media (max-width: 650px) {
+          .whyItem {
+            grid-template-columns: 1fr !important;
+            padding: 25px !important;
+          }
+
+          .whyItem h3 {
+            font-size: 23px !important;
+          }
+        }
+
+
+        /* ===== WHY US DESKTOP FIX ===== */
+
+        .whyUs {
+          padding: 110px 0 !important;
+        }
+
+        .whyGrid {
+          grid-template-columns: minmax(420px, 0.85fr) minmax(520px, 1.15fr) !important;
+          gap: 70px !important;
+          align-items: center !important;
+        }
+
+        .whyContent h2 {
+          font-size: clamp(52px, 5vw, 78px) !important;
+          line-height: 1.02 !important;
+          letter-spacing: -.04em !important;
+          max-width: 620px !important;
+        }
+
+        .whyContent > p {
+          font-size: 17px !important;
+          max-width: 520px !important;
+        }
+
+        .whyList {
+          gap: 14px !important;
+        }
+
+        .whyItem {
+          grid-template-columns: 70px 1fr !important;
+          padding: 28px 32px !important;
+          min-height: 160px !important;
+        }
+
+        .whyItem h3 {
+          font-size: 25px !important;
+        }
+
+        @media (min-width: 1400px) {
+          .whyGrid {
+            grid-template-columns: 1fr 1.35fr !important;
+            gap: 80px !important;
+          }
+
+          .whyContent h2 {
+            font-size: 76px !important;
+          }
+        }
+
+        @media (max-width: 1100px) {
+          .whyGrid {
+            grid-template-columns: 1fr !important;
+            gap: 55px !important;
+          }
+
+          .whyContent h2 {
+            font-size: 62px !important;
+          }
+        }
+
+      `}
+
+
+</style>
     </main>
   );
 }
