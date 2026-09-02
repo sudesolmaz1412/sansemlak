@@ -620,7 +620,7 @@ export default function Home() {
 
         .listingGrid {
           display: grid;
-          grid-template-columns: repeat(3, minmax(0, 1fr));
+          grid-template-columns: repeat(4, minmax(0, 1fr));
           gap: 25px;
           width: 100%;
         }
@@ -788,7 +788,7 @@ export default function Home() {
 
         .servicesGrid {
           display: grid;
-          grid-template-columns: repeat(3, 1fr);
+          grid-template-columns: repeat(4, 1fr);
           margin-top: 70px;
           border-top: 1px solid #bbb;
         }
@@ -932,7 +932,7 @@ export default function Home() {
 
         .servicesGrid {
           display: grid;
-          grid-template-columns: repeat(3, 1fr);
+          grid-template-columns: repeat(4, 1fr);
           gap: 18px;
           margin-top: 65px;
         }
@@ -1355,7 +1355,7 @@ export default function Home() {
 
         .servicesGrid {
           display: grid;
-          grid-template-columns: repeat(3, 1fr);
+          grid-template-columns: repeat(4, 1fr);
           gap: 18px;
           margin-top: 65px;
         }
