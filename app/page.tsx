@@ -93,7 +93,7 @@ export default function Home() {
     <main>
       <nav className="navbar">
         <div className="logo">
-          ŞANS <span>GAYRİMENKUL</span>
+          ŞANS YAPI <span>GAYRİMENKUL & EMLAK</span>
         </div>
 
         <div className="navLinks">
