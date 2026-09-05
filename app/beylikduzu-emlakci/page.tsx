@@ -33,7 +33,7 @@ export default function BeylikduzuEmlakciPage() {
             </p>
 
             <div className="buttons">
-              <a href="tel:+905XXXXXXXXX" className="primary">
+              <a href="tel:+905324364573" className="primary">
                 Emlak Danışmanına Ulaş
               </a>
               <a href="/ilanlar" className="secondary">
@@ -141,7 +141,7 @@ export default function BeylikduzuEmlakciPage() {
                 Satılık veya kiralık gayrimenkul arayışınız için Şans Yapı
                 Gayrimenkul ile iletişime geçebilirsiniz.
               </p>
-              <a href="tel:+905XXXXXXXXX">Şans Yapı Gayrimenkul ile İletişime Geç</a>
+              <a href="tel:+905324364573">Şans Yapı Gayrimenkul ile İletişime Geç</a>
             </div>
           </div>
         </section>
