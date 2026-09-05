@@ -164,7 +164,7 @@ export default function ZaferMahallesiSatilikDaire() {
         </div>
       </article>
 
-      <style jsx>{`
+      <style>{`
         .blogPage {
           min-height: 100vh;
           padding: 120px 20px 80px;
