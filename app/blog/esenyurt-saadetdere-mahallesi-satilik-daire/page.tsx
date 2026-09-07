@@ -149,6 +149,13 @@ export default function ZaferMahallesiSatilikDaire() {
               profesyonel destek alabilirsiniz.
             </p>
 
+            <p>
+              Saadetdere'de satılık veya kiralık gayrimenkul arıyorsanız,
+              bölgeye yönelik hizmet veren
+              <Link href="/saadetdere-emlakci">Saadetdere emlakçı</Link>
+              sayfamızı da inceleyebilirsiniz.
+            </p>
+
             <div className="ctaBox">
               <h2>Esenyurt Satılık Daire Arıyorsanız</h2>
               <p>
