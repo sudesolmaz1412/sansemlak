@@ -279,6 +279,14 @@ export default function EsenyurtEmlakciPage() {
         Şans Yapı Gayrimenkul · Esenyurt Emlakçı · Satılık ve Kiralık
         Gayrimenkul Danışmanlığı
       </p>
-    </main>
+    
+      <p style={{ marginTop: "30px", lineHeight: 1.8 }}>
+        Esenyurt'ta kiralık daire arıyorsanız,
+        <Link href="/esenyurt-kiralik-daire">Esenyurt kiralık daire</Link>
+        sayfamızı inceleyerek kiralık konut seçenekleri hakkında bilgi
+        alabilirsiniz.
+      </p>
+
+</main>
   );
 }
