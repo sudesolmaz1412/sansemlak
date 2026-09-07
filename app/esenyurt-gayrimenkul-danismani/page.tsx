@@ -355,6 +355,14 @@ export default function EsenyurtGayrimenkulDanismani() {
           }
         }
       `}</style>
-    </main>
+    
+        <p style={{ marginTop: "30px", lineHeight: 1.8 }}>
+          Esenyurt'ta satılık veya kiralık gayrimenkul arıyorsanız,
+          bölgeye yönelik hizmet veren
+          <Link href="/esenyurt-emlakci">Esenyurt emlakçı</Link>
+          sayfamızı da inceleyebilirsiniz.
+        </p>
+
+      </main>
   );
 }
